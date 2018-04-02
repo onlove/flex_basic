@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 150px;
+            display: flex;
+            border: 1px solid lightgray;
+        }
+        .box{
+            width: 100px;
+            height: 50px;
+            color: #fff;
+            background: red;
+            box-sizing: border-box;
+        }
+        .box:nth-of-type(1){
+            flex-shrink: 0;
+            background-color: red;
+        }
+        .box:nth-of-type(2){
+            flex-shrink: 1;
+            background-color: green;
+        }
+        .box:nth-of-type(3){
+            flex-shrink: 1;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">0</div>
+        <div class="box">1</div>
+        <div class="box">1</div>
+    </div>
+    <br/>
+    <br/>
+</body>
+</html>
